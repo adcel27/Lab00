@@ -21,11 +21,11 @@ team_data <- tibble(
            "Ben", "Yara", "Gandom"),
   github_username = c("adcel27", "jamieewen", "dylanhobman", 
                       "ben-251", "yarakanaann", "Gand0m"), 
-  colour = c("green", "red", "lavenderblush", 
-             "hotpink", "papayawhip", "peachpuff2"),
-  hobby = c("Skiing", "Football", "baketball", 
-            "voleyball", "badminton", "Trampolining"),
-  favourite_number = c(3, 9, 5, 4, 7, 8)
+  colour = c("green", "red", "blue", 
+             "yellow", "peachpuff", "hotpink"),
+  hobby = c("skiing", "football", "football", 
+            "basketball", "badminton", "voleyball"),
+  favourite_number = c(3, 9, 6, 4, 7, 8)
   )
 
 team_data
@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+The bar graph displays our favorite number in our favorite colour assigned to our username.
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "username", 
+          y = "favourite_number",
+          title = "favourite_numbers")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+The function labs () assigns labels to the graph.
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+There will be a very wide range of possible hobbies, so it will be probably more useful to show every hobby that doesn't reach certain count reassigned as other.
